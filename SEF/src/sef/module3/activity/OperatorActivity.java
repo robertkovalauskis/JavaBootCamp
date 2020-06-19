@@ -22,10 +22,13 @@ public class OperatorActivity {
 		System.out.println("Difference = " + result);
 		
 		// Add numbers
+		int y = 5;
+		int x = 10;
 		
+		int secondResult = result + x + y;
 		
 		// Print result
-		
+		System.out.println("Second result. Diffrence + added numbers = " + secondResult);
 		
 	}
 
