@@ -15,12 +15,11 @@ public class Employee_I extends Person_I  {
 			
 	}
 	
-	// parametirized + Person_I
+	// parametirized
 	public Employee_I(double salary, String title, String name, int age){
 		this.salary = salary;
 		this.title = title;
-		this.name = name;
-		this.age = age;
+		
 	}
 	
 	// write getter for int salary

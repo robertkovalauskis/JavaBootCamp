@@ -4,7 +4,19 @@ public class ErrorSample {
 	
 	//This is an example of an error which cannot be handled programmatically 
 	public static void main(String arg[]){
-		infinity();
+		try {
+			System.out.println(divide(0, 0));
+		} catch (ArithmeticException e) {
+			// TODO: handle exception
+			System.out.println("I can't devide");
+		}
+		
+		//infinity();
+		
+	}
+	
+	public static int divide(int a, int b) {
+		return a/b;
 	}
 	
 	//Below method calls itself and
@@ -12,9 +24,9 @@ public class ErrorSample {
 	//At one point in time, JVM would give up and show StackOverflowError
 	public static void infinity(){
 		//1 - Print a message
-	
+	System.out.println("Infinity!");
 		
 		//2 - Call infinity()
-	
+	infinity();
 	}
 }
