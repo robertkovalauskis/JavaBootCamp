@@ -2,34 +2,64 @@ package sef.module6.activity;
 
 public class Rectangle extends Shape{
 
-	static double lenght;
-	static double breadth;
-	static double area;
-	
+	double lenght;
+	double breadth;
+				
+	// Complete the code and Add abstract method calculateArea() 
+	// and calculatePerimeter() with return type as double
+			
 	// default constructor
-		public void rectangle()
+		public Rectangle()
 		{
-			this.lenght = 10.10;
-			this.breadth = 15.15;
+			this.color = "blue";
+			this.lenght = 5.00;
+			this.breadth = 6.00;
 		}
 		
 	// parameterized constructor
-	public Rectangle(double lenght, double breadth) {
+	public Rectangle(String color, double lenght, double breadth) {
 		
+		this.color = color;
 		this.lenght = lenght;
 		this.breadth = breadth;
 	}
 
-	public double calculateArea() {
+	// setter
+	public void setParameters(double x, double y)
+	{
+		this.lenght = x;
+		this.breadth = y;
+	}
 	
-		return area = lenght * breadth;
+	// getters
+	public double getLenght()
+	{
+		return lenght;
+	}
+	
+	public double getBreadth()
+	{
+		return breadth;
+	}
+	
+	
+	// implementing methods from Shape.class
+	public double calculateArea() 
+	{
+		return lenght * breadth;
 	}
 
-	
-	public double calculatePerimeter() {
-		
-		return 2*(lenght * breadth);
+	public double calculatePerimeter() 
+	{
+			return 2*(lenght + breadth);
 	}
-		
+	
+	// color getter/setter
+	public void setColor(String c) {
+		color = c; 
+	}
+	public String getColor() {
+		return color;
+	}
 	
 }
