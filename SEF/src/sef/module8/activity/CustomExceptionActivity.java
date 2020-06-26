@@ -5,6 +5,9 @@ public class CustomExceptionActivity{
 
 	//2 - Override getMessage() and provide the following message 
 	// "You are not allowed to use this program"
-	
+	public void getMessage()
+	{
+		System.out.println("You are not allowed to use this program");
+	}
 	
 }

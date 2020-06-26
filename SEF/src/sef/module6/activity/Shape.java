@@ -2,7 +2,7 @@ package sef.module6.activity;
 
 public abstract class Shape {
 	
-	String color;
+	
 	
 	// abstract methods (no implementation)
 		public abstract double calculateArea();

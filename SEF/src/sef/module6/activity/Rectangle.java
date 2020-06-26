@@ -2,6 +2,7 @@ package sef.module6.activity;
 
 public class Rectangle extends Shape{
 
+	String color;
 	double lenght;
 	double breadth;
 				
