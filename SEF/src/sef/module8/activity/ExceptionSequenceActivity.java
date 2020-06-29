@@ -13,11 +13,11 @@ void divide(int num1,int num2)
 	}
 	catch(ArithmeticException e)
 	{
-		System.out.println("Exception!!!");
+		System.out.println("Division by zero is not allowed");
 	}
 	catch(Exception a)
 	{
-		System.out.println("Division by zero is not allowed");
+		System.out.println("Exception!!!");
 	}
 	
 }
